@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="repeat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    body {
+        background-color: #F1F8FF;
+        margin: 0;
+        /* Add margin reset to body */
+    }
+
+    .sidebar {
+        float: right;
+        /* Position the sidebar on the right */
+        width: 250px;
+        /* Adjust the width of the sidebar as needed */
+        background-color: #fff;
+        /* Sidebar background color */
+        height: 120vh;
+        /* Make sidebar height take up full viewport height */
+        padding: 10px 0;
+    }
+
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 600;
+        gap: 30px;
+        direction: rtl;
+    }
+
+    .sidebar i {
+        width: 16px;
+        height: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .sidebar ul li a {
+        display: block;
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        line-height: 50px;
+        font-size: 20px;
+        padding-left: 60px;
+        box-sizing: border-box;
+        direction: rtl;
+        border-radius: 25px;
+    }
+
+    .sidebar ul li a:hover {
+        /* background-color: #aad1f9; */
+        background: rgb(119, 209, 239);
+        border-bottom: 5px solid rgb(17, 102, 130);
+    }
+
+    .sidebar header {
+        background-color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        font-weight: 600;
+        color: rgb(7, 193, 255);
+        font-family: sans-serif;
+    }
+
+    .appointment {
+        display: block;
+        height: 120vh;
+        width: 80%;
+        background-color: #F1F8FF;
+        margin: 25px;
+        direction: rtl;
+    }
+
+    .main {
+        position: relative;
+        display: flex;
+        top: 0px;
+        right: 0px;
+        color: white;
+        width: 100%;
+        height: 80px;
+        background-color: #3497F9;
+        margin-left: 10px;
+    }
+
+    .main h3 {
+        position: relative;
+        top: -5px;
+        font-size: 30px;
+        right: 65px;
+    }
+
+    .student_sheet {
+        width: 90%;
+        height: 700px;
+        background-color: white;
+        position: relative;
+        top: 80px;
+        right: 65px;
+        border-radius: 10px;
+    }
+
+    .student_info {
+        background-color: #3497F9;
+        width: 150px;
+        height: 35px;
+        position: relative;
+        bottom: 35px;
+    }
+
+    .student_info a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        right: 27px;
+        top: 6px;
+    }
+
+    .detection {
+        background-color: #3497F9;
+        width: 150px;
+        height: 35px;
+        position: relative;
+        bottom: 70px;
+        right: 165px;
+    }
+
+    .detection a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        right: 37px;
+        top: 6px;
+    }
+
+    .repeat {
+        background-color: #3497F9;
+        width: 150px;
+        height: 35px;
+        position: relative;
+        bottom: 105px;
+        right: 330px;
+    }
+
+    .repeat a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        right: 38px;
+        top: 6px;
+    }
+
+    .prescription {
+        background-color: #3497F9;
+        width: 150px;
+        height: 35px;
+        position: relative;
+        bottom: 140px;
+        right: 495px;
+    }
+
+    .prescription a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        right: 27px;
+        top: 6px;
+    }
+
+    .text {
+        font-size: 40px;
+        background-color: #F2F2F2;
+        width: 60%;
+        height: 60%;
+        border-radius: 10px;
+        position: relative;
+        right: 256px;
+        top: -47px;
+    }
+
+    .text h1 {
+        position: relative;
+        text-align: center;
+        top: 100px;
+    }
+
+    .book {
+        width: 300px;
+        height: 50px;
+        text-decoration: none;
+        background-color: #3497F9;
+        position: relative;
+        right: 240px;
+        font-weight: 2px;
+        text-align: center;
+        border-radius: 10px;
+        top: 90px;
+
+
+
+    }
+
+    .book a {
+        text-decoration: none;
+        color: white;
+        width: 20px;
+
+    }
+</style>
+
+<body>
+    <div class="sidebar">
+        <header>BSNU</header>
+        <ul>
+            <li><a href="main.html"> <i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="booking.html"><i class="fas fa-clipboard-list"></i>الحجز</a></li>
+            <li><a href="follow-up.html"> <i class="fas fa-user-tie"></i>المتابعه</a></li>
+            <li><a href="appointment.html"> <i class="fa fa-link"></i>المواعيد</a></li>
+            <li><a href="#"> <i class="fa fa-group"></i> المرضى</a></li>
+            <li><a href="#"> <i class="fa fa-user-md"></i> الاطباء</a></li>
+            <li><a href="#"> <i class="fa fa-folder"></i>مخزن الادوية</a> </li>
+            <li><a href="#"> <i class="fa fa-file"></i> الروشتة الطبية </a></li>
+            <li><a href="#"> <i class="fas fa-comments"> </i>التواصل</a></li>
+            <li><a href="#"> <i class="fas fa-cog"></i> الاعدادات</a></li>
+            <li><a href="#"> <i class="fa fa-sign-out"></i> تسجيل الخروج </a></li>
+        </ul>
+    </div>
+    <div class="appointment">
+        <div class="main">
+            <h3>الصفحة الرئيسية</h3>
+
+        </div>
+        <div class="student_sheet">
+            <div class="student_info">
+                <a href="main.html">بيانات الطالب</a>
+
+            </div>
+            <div class="detection">
+                <a href="Detection time.html">ميعاد الكشف</a>
+            </div>
+            <div class="repeat">
+                <a href="repeat appointment.html">ميعاد الاعادة</a>
+            </div>
+            <div class="prescription">
+                <a href="prescription.html">الروشتة الطبية</a>
+
+            </div>
+            <div class="text">
+                <h1>لا يوجد ميعاد للاعادة</h1>
+                <div class="book">
+                    <a href="booking.html">لحجز ميعاد</a>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
